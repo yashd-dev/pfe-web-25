@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📻</text></svg>"
+    />
+    <title>Vinyl Music Player — Refactored</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="case-wrap">
+        <div class="case" id="caseRoot">
+          <div class="title-block">
+            <div class="title-main">
+              <span class="line" id="caseTitle1">Tickets to</span>
+              <span class="line" id="caseTitle2">My Downfall</span>
+            </div>
+            <div class="title-sub" id="caseYear">©2020</div>
+          </div>
+          <div class="vertical-brand">@ACM.MPSTME</div>
+          <div class="center-stage">
+            <div class="vinyl-outer" id="vinylOuter">
+              <div class="vinyl" id="vinyl">
+                <div class="label" id="label">
+                  <img
+                    id="coverImg"
+                    src="https://via.placeholder.com/600x600.png?text=Album"
+                    alt="Cover"
+                  />
+                </div>
+                <div class="spindle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="meta-block" id="metaBlock">
+            <div id="metaFormat">FORMAT: STUDIO ALBUM (LP)</div>
+            <div id="metaGenre">GENRE: —</div>
+            <div id="metaLabel">LABEL: —</div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="search">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search artists, songs or albums..."
+          />
+          <button id="searchBtn">Search</button>
+        </div>
+        <div class="results" id="results"></div>
+        <div class="player">
+          <div class="player-top">
+            <div class="player-art">
+              <img
+                id="playerArt"
+                src="https://via.placeholder.com/150x150.png?text=Album"
+                alt="art"
+              />
+            </div>
+            <div class="player-info">
+              <div class="title" id="playerTitle">No song selected</div>
+              <div class="artist" id="playerArtist">—</div>
+            </div>
+          </div>
+          <div class="player-controls">
+            <button class="btn-play" id="btnPlay">▶</button>
+            <div class="timeline">
+              <div class="time" id="curTime">0:00</div>
+              <input
+                id="seek"
+                class="seek"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+              />
+              <div class="time" id="durTime">0:00</div>
+            </div>
+            <div class="volume-wrap">
+              <input
+                id="volume"
+                class="volume"
+                type="range"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+              />
+            </div>
+          </div>
+        </div>
+        <audio id="audioEl" preload="metadata"></audio>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
