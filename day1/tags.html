@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HTML Tags Features Demo</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Tags & Features — Compact Demo</h1>
+      <p>Quick examples of common and advanced HTML elements.</p>
+    </header>
+    <br><br>
+
+    <section>
+      <h2>Text semantics</h2>
+      <p>
+        This is a <strong>strong</strong> word, <em>emphasized</em> phrase,
+        <b>bold</b>, <i>italic</i>, <small>small</small>, and
+        <mark>highlighted</mark>.
+      </p>
+      <p>Quotation: <q cite="https://example.com">Inline short quote</q>.</p>
+      <blockquote cite="https://example.com">
+        A blockquote for longer quoted text.
+      </blockquote>
+      <p>
+        Keyboard: <kbd>Ctrl</kbd> + <kbd>C</kbd>, sample output
+        <samp>result</samp>, variable <var>x</var>.
+      </p>
+      <p>Subscript H<sub>2</sub>O and superscript E = mc<sup>2</sup>.</p>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Headings & grouping</h2>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h4>H4</h4>
+      <h5>H5</h5>
+      <h6>H6</h6>
+      <p>
+        Sectioning with <code>&lt;section&gt;</code>,
+        <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>,
+        <code>&lt;nav&gt;</code>.
+      </p>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Lists</h2>
+      <ol>
+        <li>
+          Numbered
+          <ul>
+            <li>Nested unordered</li>
+            <li>Another item</li>
+          </ul>
+        </li>
+        <li>Second</li>
+      </ol>
+      <dl>
+        <dt>Definition Term</dt>
+        <dd>Definition description</dd>
+      </dl>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Links & Media</h2>
+      <p>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">External link</a>
+        and <a href="#local">local anchor</a>.
+      </p>
+      <figure>
+        <img
+          src="https://via.placeholder.com/320x160.png?text=Image"
+          alt="placeholder image"
+        />
+        <figcaption>figure + figcaption</figcaption>
+      </figure>
+      <div>
+        <video controls width="320">
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support video.
+        </video>
+        <br>
+        <audio controls>
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3"
+            type="audio/mpeg"
+          />
+          Audio not supported.
+        </audio>
+      </div>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Table</h2>
+      <table >
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>Developer</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>Designer</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Footer note</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Form elements</h2>
+      <form>
+        <fieldset>
+          <legend>Registration</legend>
+          <label>Text <input name="name" placeholder="name" /></label><br />
+          <label>Email <input type="email" name="email" placeholder="you@example.com" /></label><br />
+          <label>Password <input type="password" /></label><br />
+          <label>Choose color <input type="color" value="#0b5cff" /></label><br />
+          <label>Number <input type="number" min="0" max="10" value="3" /></label><br />
+          <label>Range <input type="range" min="0" max="100" value="30" /></label><br />
+          <label>File <input type="file" /></label><br />
+          <label><input type="checkbox" checked /> Agree</label>
+          <label><input type="radio" name="r" checked /> One</label>
+          <label><input type="radio" name="r" /> Two</label>
+          <br />
+          <label for="fav">Select</label>
+          <select id="fav">
+            <optgroup label="Fruits">
+              <option>Apple</option>
+              <option selected>Orange</option>
+            </optgroup>
+            <option>Other</option>
+          </select>
+          <br />
+          <label>Textarea</label><br />
+          <textarea rows="3" cols="30">Sample text</textarea>
+          <br />
+          <button type="submit">Submit</button>
+        </fieldset>
+        <p>Output: <output id="out">none</output></p>
+      </form>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Interactive & Progressive</h2>
+      <details>
+        <summary>More options</summary>
+        <p>This is collapsible content using &lt;details&gt; + &lt;summary&gt;.</p>
+      </details>
+      <progress value="32" max="100">32%</progress>
+      <meter value="0.6">60%</meter>
+      <progress value="0.45" max="1">45%</progress>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Metadata & Microdata</h2>
+      <address>Contact: <a href="mailto:dev@example.com">dev@example.com</a></address>
+      <p><time datetime="2025-09-16">2025-09-16</time></p>
+      <p>
+        This is <abbr title="HyperText Markup Language">HTML</abbr> and a
+        <data value="42">meaningful number</data>.
+      </p>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Canvas & SVG</h2>
+      <canvas id="c" width="320" height="120"></canvas>
+      <svg width="120" height="80" viewBox="0 0 120 80">
+        <rect x="6" y="6" width="108" height="68" rx="8" fill="none" stroke="#0b5cff" stroke-width="2"></rect>
+        <circle cx="36" cy="40" r="10"></circle>
+        <text x="60" y="45" font-size="10">SVG text</text>
+      </svg>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Code & Preformatted</h2>
+      <p>Inline code: <code>const x = 1;</code></p>
+      <pre><code>function hello(){
+  console.log('hello');
+}</code></pre>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Embedding</h2>
+      <iframe
+        srcdoc="&lt;h3&gt;Inline iframe&lt;/h3&gt;&lt;p&gt;safe demo&lt;/p&gt;"
+        width="100%"
+        height="120"
+      ></iframe>
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Accessibility & ARIA</h2>
+      <nav aria-label="Primary">
+        <a href="#">Home</a> • <a href="#">About</a>
+      </nav>
+      <p role="status">Status messages use ARIA roles.</p>
+      <label for="search">Search</label>
+      <input id="search" aria-label="Search input" placeholder="search" />
+    </section>
+    <br><br>
+
+    <section>
+      <h2>Miscellaneous</h2>
+      <progress id="p" max="100" value="70"></progress>
+      <p><del>Old text</del> <ins>new text</ins></p>
+      <p><cite>— Source Title</cite></p>
+      <p id="local">Local anchor target</p>
+    </section>
+    <br><br>
+
+    <footer>Rendered on 2025-09-16</footer>
+    <script>
+      const cvs = document.getElementById("c");
+      if (cvs && cvs.getContext) {
+        const ctx = cvs.getContext("2d");
+        ctx.fillStyle = "#0b5cff";
+        ctx.fillRect(10, 10, 80, 20);
+        ctx.fillStyle = "#fff";
+        ctx.font = "14px sans-serif";
+        ctx.fillText("canvas demo", 14, 26);
+      }
+    </script>
+  </body>
+</html>
