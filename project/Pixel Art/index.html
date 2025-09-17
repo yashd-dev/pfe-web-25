@@ -8,16 +8,30 @@
   </head>
   <body>
     <h1>Pixel Art Maker</h1>
-
-    <div class="navbar">
-      <button class="resetBtn">Reset</button>
-      <button class="eraseBtn">Erase</button>
-      <input type="color" value="#d63484" class="colourPicker" />
-      <input type="number" value="30" min="5" max="50" class="pixelNumbers" />
+    <div class="main-container">
+      <div class="left-panel">
+        <div class="navbar">
+          <button class="resetBtn">Reset</button>
+          <button class="eraseBtn">Erase</button>
+          <button class="randomColorBtn">Random Color</button>
+          <!-- This one -->
+          <input type="color" value="#d63484" class="colourPicker" />
+          <input
+            type="number"
+            value="30"
+            min="5"
+            max="50"
+            class="pixelNumbers"
+          />
+        </div>
+        <div class="canvas"></div>
+      </div>
+      <div class="right-panel">
+        <h2>Color Palette</h2>
+        <button class="generateSchemeBtn">Generate Scheme</button>
+        <div class="palette-container"></div>
+      </div>
     </div>
-
-    <div class="canvas"></div>
-
     <script src="./pixelArt.js"></script>
   </body>
 </html>

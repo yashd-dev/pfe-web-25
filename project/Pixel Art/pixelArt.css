@@ -110,3 +110,52 @@ input[type="number"] {
     width: 100%;
   }
 }
+/* Add this to your existing CSS */
+.main-container {
+  display: flex;
+  width: min(900px, 95%);
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.left-panel {
+  flex: 1;
+}
+
+.right-panel {
+  width: 200px;
+  background-color: var(--nav-bg);
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+}
+
+.right-panel h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.generateSchemeBtn {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.palette-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.color-swatch {
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.color-swatch:hover {
+  transform: scale(1.05);
+}
