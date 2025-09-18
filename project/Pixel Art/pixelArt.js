@@ -5,8 +5,12 @@ const container = document.querySelector(".canvas"),
   resetBtn = document.querySelector(".resetBtn"),
   eraseBtn = document.querySelector(".eraseBtn"),
   randomColorBtn = document.querySelector(".randomColorBtn");
+  
 
-let size = sizeInput.value, draw = false, erase = false;
+
+let size = sizeInput.value,
+  draw = false,
+  erase = false;
 
 // Create pixel grid
 function createPixelGrid(n) {
@@ -15,8 +19,11 @@ function createPixelGrid(n) {
   for (let i = 0; i < n * n; i++) {
     const pixel = document.createElement("div");
     pixel.className = "pixel";
-    pixel.onmousedown = () => pixel.style.backgroundColor = erase ? "" : colorPicker.value;
-    pixel.onmouseenter = () => { if (draw) pixel.style.backgroundColor = erase ? "" : colorPicker.value; };
+    pixel.onmousedown = () =>
+      (pixel.style.backgroundColor = erase ? "" : colorPicker.value);
+    pixel.onmouseenter = () => {
+      if (draw) pixel.style.backgroundColor = erase ? "" : colorPicker.value;
+    };
     container.appendChild(pixel);
   }
 }
@@ -39,7 +46,10 @@ sizeInput.onchange = () => {
   sizeInput.value = size;
   createPixelGrid(size);
 };
-eraseBtn.onclick = () => { erase = !erase; eraseBtn.textContent = erase ? "Draw" : "Erase"; };
+eraseBtn.onclick = () => {
+  erase = !erase;
+  eraseBtn.textContent = erase ? "Draw" : "Erase";
+};
 resetBtn.onclick = () => createPixelGrid(size);
 randomColorBtn.onclick = fetchRandomColor;
 
