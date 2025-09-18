@@ -1,82 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      h2{
+        color: rgb(102, 102, 250);
+      }
+      #yash{
+        color: black;
+        text-align: center;
+        
+      }
+      
+    </style>
     <meta charset="UTF-8" />
     <title>Complex HTML Form Example</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body bgcolor="#f9f9f9">
     <h2 align="center">User Registration & Survey Form</h2>
-
+    <h2 id="yash" style="color: red;">This was made by Yash</h2>
     <form action="/submit" method="post" enctype="multipart/form-data">
-      <fieldset>
-        <legend><b>Personal Information</b></legend>
 
-        <label for="fname">First Name:</label>
-        <input
-          type="text"
-          id="fname"
-          name="fname"
-          placeholder="John"
-          required
-          size="20"
-          maxlength="50"
-        /><br /><br />
-
-        <label for="lname">Last Name:</label>
-        <input
-          type="text"
-          id="lname"
-          name="lname"
-          placeholder="Doe"
-          required
-        /><br /><br />
-
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="example@mail.com"
-          required
-        /><br /><br />
-
-        <label for="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          minlength="6"
-          required
-        /><br /><br />
-
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" /><br /><br />
-
-        <label for="gender">Gender:</label>
-        <input type="radio" name="gender" value="male" /> Male
-        <input type="radio" name="gender" value="female" /> Female
-        <input type="radio" name="gender" value="other" /> Other<br /><br />
-
-        <label for="phone">Phone:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          pattern="[0-9]{10}"
-          placeholder="1234567890"
-        /><br /><br />
-
-        <label for="country">Country:</label>
-        <select id="country" name="country" required>
-          <option value="">--Select--</option>
-          <option value="us">United States</option>
-          <option value="uk">United Kingdom</option>
-          <option value="in">India</option>
-          <option value="other">Other</option></select
-        ><br /><br />
-      </fieldset>
-
-      <br />
 
       <fieldset>
         <legend><b>Preferences</b></legend>
@@ -121,39 +65,8 @@
 
       <br />
 
-      <fieldset>
-        <legend><b>Account Settings</b></legend>
 
-        <label for="username">Choose Username:</label>
-        <input type="text" id="username" name="username" required /><br /><br />
-
-        <label for="language">Preferred Language:</label>
-        <datalist id="languages">
-          <option value="English"></option>
-          <option value="Spanish"></option>
-          <option value="French"></option>
-          <option value="German"></option>
-        </datalist>
-
-        <input list="languages" name="language" /><br /><br />
-
-        <label for="timezone">Timezone:</label>
-        <select id="timezone" name="timezone">
-          <option value="EST">EST (GMT-5)</option>
-          <option value="CST">CST (GMT-6)</option>
-          <option value="PST">PST (GMT-8)</option>
-          <option value="IST">IST (GMT+5:30)</option></select
-        ><br /><br />
-      </fieldset>
-
-      <br />
-
-      <fieldset>
-        <legend><b>Submit</b></legend>
-
-        <input type="reset" value="Reset Form" />
-        <input type="submit" value="Submit Form" />
-      </fieldset>
+    
     </form>
   </body>
 </html>

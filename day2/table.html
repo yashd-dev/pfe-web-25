@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
     <title>Formatted Table</title>
+    <style>
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
   </head>
   <body>
-    <table border="1" cellpadding="5" cellspacing="5" align="center">
+    <table
+      border="1"
+      cellpadding="45"
+      cellspacing="35"
+      align="center"
+      style="border-collapse: collapse;"
+    >
       <thead bgcolor="#deffde">
         <tr>
           <th bgcolor="#ffffff"></th>
@@ -14,7 +26,7 @@
         </tr>
       </thead>
 
-      <tbody align="center">
+      <tr align="center">
         <tr>
           <td rowspan="2">Method 1</td>
           <td>60 ms</td>
@@ -26,7 +38,7 @@
           <td>0 ms</td>
           <td>0 ms</td>
         </tr>
-      </tbody>
+      </tr>
 
       <tfoot align="center">
         <tr>
